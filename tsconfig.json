@@ -15,10 +15,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-	"esModuleInterop": true,
-    "types": [
-      "vite/client"
-    ]
+	"esModuleInterop": true,    
+    "types": ["vite/client", "@cloudflare/workers-types"]    
   },
   "include": [
     "src"

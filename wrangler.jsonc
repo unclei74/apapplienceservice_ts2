@@ -1,5 +1,11 @@
 {
-	"name": "worker-name",
-	"compatibility_date": "2026-02-07",
-	"main": "src/index.ts"
+  "name": "ap-appliance-service",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-07",
+
+  // Serve static files from Vite's build output
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  }
 }
