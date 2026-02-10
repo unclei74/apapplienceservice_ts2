@@ -16,7 +16,7 @@
     "jsx": "react-jsx",
     "strict": true,
 	"esModuleInterop": true,    
-    "types": ["vite/client", "@cloudflare/workers-types"]    
+    "types": ["vite/client"]    
   },
   "include": [
     "src"
