@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { SITE } from "../data";
+import * as Data from "../data";
+console.log("DATA EXPORTS:", Data);
 
 export function Header() {
   return (
