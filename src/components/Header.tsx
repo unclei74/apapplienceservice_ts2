@@ -6,7 +6,7 @@ export function Header() {
     <header className="header">
       <div className="topbar">
         <a className="brand" href="#/" aria-label={`${SITE.name} home`}>
-          <img src="./logo.svg" alt={`${SITE.name} logo`} />
+		  <img src={imgLogo()} alt={`${SITE.name} logo`} />
           <div className="name">
             <strong>{SITE.name}</strong>
             <span>Appliance Repair • {SITE.city}</span>
