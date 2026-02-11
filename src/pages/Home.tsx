@@ -1,4 +1,4 @@
-import { SITE } from "../data";
+import { SITE, imgHero } from "../data";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         <div className="heroArt">
-          <img src="./hero.svg" alt="Las Vegas skyline and appliance icons" />
+          <img src={imgHero()} alt="Las Vegas skyline and appliance icons" />
         </div>
       </section>
 

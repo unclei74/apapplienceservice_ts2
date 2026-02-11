@@ -1,4 +1,4 @@
-import { SERVICES, imgService } from "../data";
+import { SERVICES, SITE, imgService } from "../data";
 
 export default function Services() {
   return (
@@ -15,6 +15,9 @@ export default function Services() {
               <img src={imgService(s.file)} alt={s.alt} />
             </div>
             <h3>{s.name}</h3>
+            <p>
+              Diagnosis, parts replacement, and performance testing. Call us during <strong>{SITE.hours}</strong>.
+            </p>
           </article>
         ))}
       </section>
