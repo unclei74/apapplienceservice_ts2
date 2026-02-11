@@ -7,7 +7,7 @@ export const SITE = {
   hours: "Mon–Sat 8:00 AM – 5:00 PM",
 } as const;
 
-const BASE = import.meta.env.BASE_URL; // IMPORTANT ✅
+const BASE = import.meta.env.BASE_URL; // with base:'/' => BASE is '/'
 
 export const SERVICES = [
   { name: "Washing Machines", img: `${BASE}services/washer.svg`, alt: "Washing machine repair" },
