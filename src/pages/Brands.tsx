@@ -1,4 +1,4 @@
-import { BRANDS, brandImg } from "../data";
+import { BRANDS, imgBrand } from "../data";
 
 export default function Brands() {
   return (
@@ -10,9 +10,9 @@ export default function Brands() {
 
       <section className="brandGrid">
         {BRANDS.map((b) => (
-          <div key={b} className="brandTile">
-            <img src={brandImg(b)} alt={b} />
-            <span>{b}</span>
+          <div key={b.name} className="brandTile">
+            <img src={imgBrand(b.file)} alt={b.name} />
+            <span>{b.name}</span>
           </div>
         ))}
       </section>
