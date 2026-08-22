@@ -1,7 +1,5 @@
-import * as Data from "../data";
-console.log("DATA EXPORTS:", Data);
 import { NavLink } from "react-router-dom";
-import { SITE } from "../data";
+import { SITE, imgLogo } from "../data";
 
 
 export function Header() {
