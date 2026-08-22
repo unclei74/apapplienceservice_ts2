@@ -27,6 +27,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Debug secret scope
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          echo "CLOUDFLARE_API_TOKEN length: ${#TOKEN}"
+          echo "CLOUDFLARE_ACCOUNT_ID length: ${#ACCOUNT}"
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
