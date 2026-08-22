@@ -31,9 +31,13 @@ jobs:
         env:
           TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          VARS_JSON: ${{ toJSON(vars) }}
+          SECRETS_JSON: ${{ toJSON(secrets) }}
         run: |
           echo "CLOUDFLARE_API_TOKEN length: ${#TOKEN}"
           echo "CLOUDFLARE_ACCOUNT_ID length: ${#ACCOUNT}"
+          echo "vars context keys: $VARS_JSON"
+          echo "secrets context keys (values auto-masked by GitHub): $SECRETS_JSON"
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
