@@ -1,10 +1,13 @@
-import { SITE } from "../data";
+import { SERVICE_AREAS, SITE } from "../data";
+import { SEO, useSeo } from "../seo";
 
 export default function About() {
+  useSeo(SEO.about.title, SEO.about.description, SEO.about.keywords);
+
   return (
     <main className="container">
       <div className="sectionTitle">
-        <h2>About {SITE.name}</h2>
+        <h1>About {SITE.name}</h1>
         <p>Local, family-owned appliance repair serving {SITE.city}.</p>
       </div>
 
@@ -51,6 +54,22 @@ export default function About() {
         <article className="card">
           <h3>3) Repair & Testing</h3>
           <p>We complete the repair, verify performance, and share maintenance tips to help prevent future issues.</p>
+        </article>
+      </section>
+
+      <div className="sectionTitle">
+        <h2>Built for Las Vegas Homes</h2>
+        <p>Serving {SERVICE_AREAS.join(", ")}.</p>
+      </div>
+
+      <section className="grid">
+        <article className="card">
+          <h3>Hard Water</h3>
+          <p>Las Vegas has some of the hardest water in the country. Mineral buildup wears out washers, dishwashers, and ice makers, and we know what to look for.</p>
+        </article>
+        <article className="card">
+          <h3>Desert Heat</h3>
+          <p>Summer heat makes refrigerators and freezers work harder. We diagnose cooling problems before they turn into spoiled food.</p>
         </article>
       </section>
     </main>

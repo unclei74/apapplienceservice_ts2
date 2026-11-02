@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { SITE } from "../data";
+import { SEO, useSeo } from "../seo";
 
 type FormState = {
   name: string;
@@ -18,6 +19,7 @@ const initialState: FormState = {
 };
 
 export default function Contact() {
+  useSeo(SEO.contact.title, SEO.contact.description, SEO.contact.keywords);
   const [form, setForm] = useState<FormState>(initialState);
 
   const mailto = useMemo(() => {
@@ -39,7 +41,7 @@ export default function Contact() {
   return (
     <main className="container">
       <div className="sectionTitle">
-        <h2>Contact</h2>
+        <h1>Schedule Appliance Repair in Las Vegas</h1>
         <p>Request service or ask a question. We’ll respond as soon as possible.</p>
       </div>
 

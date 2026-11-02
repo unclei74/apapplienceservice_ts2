@@ -105,7 +105,7 @@ img{max-width:100%; display:block}
 .btn.secondary{background:#fff; color:var(--ink); border-color:var(--line)}
 .btn.secondary:hover{background:#f9fafb}
 .sectionTitle{display:flex; align-items:end; justify-content:space-between; gap:16px; margin:34px 2px 14px}
-.sectionTitle h2{margin:0; color:var(--ink); font-size:22px}
+.sectionTitle h1,.sectionTitle h2{margin:0; color:var(--ink); font-size:22px}
 .sectionTitle p{margin:0; color:var(--muted); font-size:14px}
 .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px}
 .card{

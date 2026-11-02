@@ -11,17 +11,72 @@ export const SITE = {
 // This helps images work across Cloudflare/GitHub Pages depending on your Vite base:
 export const BASE = import.meta.env.BASE_URL;
 
+export const SERVICE_AREAS = [
+  "Las Vegas",
+  "Henderson",
+  "Summerlin",
+  "North Las Vegas",
+  "Spring Valley",
+  "Enterprise",
+  "Paradise",
+] as const;
+
 // Services (explicit files = no guessing)
 export const SERVICES = [
-  { name: "Washing Machines", file: "washer.svg", alt: "Washing machine repair" },
-  { name: "Dryers", file: "dryer.svg", alt: "Dryer repair" },
-  { name: "Ovens", file: "oven.svg", alt: "Oven repair" },
-  { name: "Refrigerators", file: "fridge.svg", alt: "Refrigerator repair" },
-  { name: "Dishwashers", file: "dishwasher.svg", alt: "Dishwasher repair" },
-  { name: "Freezers", file: "freezer.svg", alt: "Freezer repair" },
-  { name: "Microwaves", file: "microwave.svg", alt: "Microwave repair" },
-  { name: "Ice Makers", file: "icemaker.svg", alt: "Ice maker repair" },
-  { name: "Stoves", file: "stove.svg", alt: "Stove repair" },
+  {
+    name: "Washing Machines",
+    file: "washer.svg",
+    alt: "Washing machine repair in Las Vegas",
+    desc: "Washer repair in Las Vegas for machines that won't spin, won't drain, leak, or shake. Front-load and top-load washers.",
+  },
+  {
+    name: "Dryers",
+    file: "dryer.svg",
+    alt: "Dryer repair in Las Vegas",
+    desc: "Dryer repair for gas and electric dryers that won't heat, take too long to dry, squeal, or won't start.",
+  },
+  {
+    name: "Ovens",
+    file: "oven.svg",
+    alt: "Oven repair in Las Vegas",
+    desc: "Oven repair for ovens that won't heat, heat unevenly, or show error codes, including wall ovens and range ovens.",
+  },
+  {
+    name: "Refrigerators",
+    file: "fridge.svg",
+    alt: "Refrigerator repair in Las Vegas",
+    desc: "Refrigerator repair in Las Vegas for fridges that aren't cooling, are leaking water, or making loud noises. Built-in and French-door models.",
+  },
+  {
+    name: "Dishwashers",
+    file: "dishwasher.svg",
+    alt: "Dishwasher repair in Las Vegas",
+    desc: "Dishwasher repair for units that won't drain, leave dishes dirty, leak, or won't start.",
+  },
+  {
+    name: "Freezers",
+    file: "freezer.svg",
+    alt: "Freezer repair in Las Vegas",
+    desc: "Freezer repair for upright and chest freezers that aren't freezing, frost up, or run constantly.",
+  },
+  {
+    name: "Microwaves",
+    file: "microwave.svg",
+    alt: "Microwave repair in Las Vegas",
+    desc: "Over-the-range and built-in microwave repair for units that won't heat, spark, or won't turn on.",
+  },
+  {
+    name: "Ice Makers",
+    file: "icemaker.svg",
+    alt: "Ice maker repair in Las Vegas",
+    desc: "Ice maker repair when your refrigerator ice maker stops making ice, leaks, or makes small or hollow cubes.",
+  },
+  {
+    name: "Stoves",
+    file: "stove.svg",
+    alt: "Stove and range repair in Las Vegas",
+    desc: "Stove, range, and cooktop repair for burners that won't light or heat, gas or electric.",
+  },
 ] as const;
 
 // Brands (explicit mapping so filenames always match)

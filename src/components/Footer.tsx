@@ -1,4 +1,4 @@
-import { SITE } from "../data";
+import { SERVICE_AREAS, SITE } from "../data";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -11,6 +11,8 @@ export function Footer() {
             Hours: {SITE.hours} • Phone: <a href={`tel:${SITE.phoneTel}`}>{SITE.phone}</a> • Email:{" "}
             <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
           </span>
+          <br />
+          <span className="tiny">Appliance repair serving {SERVICE_AREAS.join(", ")}, NV</span>
         </div>
         <div className="tiny">© {year} {SITE.name}. All rights reserved.</div>
       </div>
